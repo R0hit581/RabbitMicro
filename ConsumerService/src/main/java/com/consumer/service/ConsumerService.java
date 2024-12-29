@@ -8,5 +8,6 @@ public class ConsumerService {
 	  @RabbitListener(queues = "message-queue")
 	    public void consumeMessage(String message) {
 	        System.out.println("Received message: " + message);
+	        System.out.println("hellow");
 	   }
 }
